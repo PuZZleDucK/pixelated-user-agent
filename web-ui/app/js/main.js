@@ -65,6 +65,7 @@ require(
   function(compose, registry, advice, withLogging, debug, events, initializeDefault, _monkeyPatched) {
     window.Pixelated = window.Pixelated || {};
     window.Pixelated.events = events;
+    window.document.getElementById("title").innerHTML = "o... o_O ... m";
 
     compose.mixin(registry, [advice.withAdvice, withLogging]);
 
